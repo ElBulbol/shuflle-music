@@ -1,0 +1,245 @@
+/* Global Styles */
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #181818;
+}
+
+/* Layout Container */
+.spotify-layout {
+    display: grid;
+    grid-template-areas:
+        "sidebar main"
+        "playback playback";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr 80px;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    grid-area: sidebar;
+    background: #121212;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00c2ff;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #282828;
+    color: #00c2ff;
+}
+
+.sidebar nav ul li a i {
+    font-size: 20px;
+    color: #00c2ff;
+}
+.sidebar a {
+    font-family: 'Rubik';
+}
+/* Main Content Styles */
+.main-content {
+    grid-area: main;
+    background: #181818;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+/* Playlist Card Styles */
+.playlist-card {
+    
+    background: #282828;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    bottom: 30px;
+    margin-top: 30px;
+}
+
+.playlist-card:hover {
+    transform: scale(1.05);
+    background: #333333;
+}
+
+.playlist-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.playlist-card span {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Create Playlist Button */
+.create-playlist {
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3ec9b7;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    gap: 10px;
+    transition: back    ground 0.3s;
+    font-family: 'Rubik';
+}
+
+.create-playlist:hover {
+    background: #3ec9b7;
+}
+
+.create-playlist span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal-content {
+    background: #282828;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-content input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    color: #000;
+    background-color: #fff;
+}
+
+.modal-content button {
+    background: #3ec9b7;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.modal-content button:hover {
+    background: #3ec9b7;
+}
+
+.modal-close {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Playback Bar Styles */
+.playback-bar {
+    grid-area: playback;
+    background: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    border-top: 1px solid #ffffff;
+}
+
+a img {
+    background: #3ec9b7;
+    color: #fff;
+    border-radius: 20px;
+    padding: 7px 7px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 35px;
+}
+
+.playback-bar a img:hover {
+    background: #3ec9b7;
+}

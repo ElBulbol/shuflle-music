@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-clip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.whole-login {
+    opacity: 90%;
+    border-radius: 10px;
+    margin-top: 35px;
+    width: 450px;
+    background: #09091E;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; 
+}
+.whole-login-c {
+    opacity: 90%;
+    border-radius: 10px;
+    margin-top: 90px;
+    width: 450px;
+    background: #09091E;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; 
+}
+
+
+.whole-login h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Rubik';
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 600;
+    /* font-weight: 800; */
+    font: italic;
+    transition: all 0.3s ease; 
+}
+.whole-login-c h1 {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Rubik';
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 600;
+    /* font-weight: 800; */
+    font: italic;
+    transition: all 0.3s ease; 
+}
+
+
+.whole-logo, .whole-logo-c {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.whole-login .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+.whole-login-c .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 15px 45px 15px 20px;
+    color: white;
+}
+
+.input-box input::placeholder {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.user-icon/*user icon*/
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.remmeber-forgot {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.lock-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.remmeber-forgot input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #5FF9F5;
+}
+
+.check-text {
+    color: white;
+    font-family: 'Rubik';
+    margin-top: 2px;
+    scale: 101%;
+    
+}
+
+.submiting-bottom {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #5FF9F5;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    bottom: -15px;
+    font-family: 'Rubik';
+
+}
+
+.submiting-bottom:hover {
+    background-color: #3ec9b7;
+}
+.submiting-bottom h1{
+    size: 120%;
+}
+
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link a {
+    font-family:'Rubik' ;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+}
+.register-link pre{
+    font-family:'Rubik' ;
+    position: relative;
+    color: white;
+}
+.forgot-pass-text{
+    position: relative;
+    left: 25px;
+    color: #5FF9F5;
+    font-family: 'Rubik';
+    text-decoration: none;
+    font-weight: 400;
+}
+.real-link a{
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik';
+    color: #5FF9F5;
+    text-decoration: none;
+} 
+.real-video{
+    z-index:-1;
+}
+/* THE END OF THE LOGIN PAGE CSS */
+.whole-create{
+
+    opacity: 90%;
+    border-radius: 10px;
+    margin-top: 35px;
+    width: 450px;
+    background: #09091E;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.user-icon-two{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 15px 45px 15px 20px;
+    color: white;
+}
+/* nav-bar start */
+
+.nav_bar {
+    background-color: #09091E;
+    border-radius: 7px;
+    height: 60px;
+}
+.nav_bar .menu-bar {
+    display: flex;
+    justify-content: end;
+}
+li {
+    margin-top: 20px;
+    margin-right: 20px;
+    list-style: none;
+    font-family: 'Rubik';
+}
+.menu-bar a {
+    text-decoration: none;
+    color :#09091E;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px; 
+    border-radius: 30px;
+    background-color: #5FF9F5; 
+    transition: all 0.4 ease; 
+}
+.menu-bar a:hover {
+    background-color: #3ec9b7; 
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+.nav_bar a {
+    opacity: 100%;
+}
+.logo-container {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    scale: 160px;
+}
+
+.logo-graphic img{
+    height: 40px;
+    scale: 140px;
+    
+}
+

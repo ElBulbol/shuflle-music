@@ -1,0 +1,142 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .bg-dark {
+    background-color: #181818;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .spotify-layout {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background: #202020;
+  }
+  
+  .main-content {
+    flex: 1;
+    background: #303030;
+  }
+  
+  /* Music Player */
+  .music-player {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    background: #282828;
+    padding: 16px;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .player-top {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .album-art {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .player-info {
+    flex: 1;
+  }
+  
+  .time-slider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .time {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .slider {
+    flex: 1;
+    -webkit-appearance: none;
+    height: 4px;
+    background: #505050;
+    border-radius: 2px;
+    outline: none;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #00c2ff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .control-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00c2ff;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .control-btn:hover {
+    background: #33d3ff;
+  }
+  
+  .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .volume-btn {
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .volume-slider {
+    width: 80px;
+    -webkit-appearance: none;
+    height: 4px;
+    background: #505050;
+    border-radius: 2px;
+  }
+  
+  .volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #00c2ff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

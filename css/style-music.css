@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #181818;
+}
+
+/* Layout Container */
+.spotify-layout {
+    display: grid;
+    grid-template-areas:
+        "sidebar main"
+        "playback playback";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 1fr 150px;
+    height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    grid-area: sidebar;
+    background: #121212;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00c2ff;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #282828;
+    color: #00c2ff;
+}
+
+.sidebar nav ul li a i {
+    font-size: 20px;
+    color: #00c2ff;
+}
+
+.sidebar a {
+    font-family: 'Rubik';
+}
+
+/* Main Content Styles */
+.main-content {
+    grid-area: main;
+    background: #181818;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Music Card Styles */
+.music-card {
+    background: #282828;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.music-card:hover {
+    transform: scale(1.05);
+    background: #333333;
+}
+
+.music-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.music-card span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.music-card button {
+    background: #3ec9b7;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.music-card button:hover {
+    background: #2fb7a4;
+    transform: scale(1.1);
+}
+
+/* Playback Bar Styles */
+.playback-bar {
+    grid-area: playback;
+    background: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top: 1px solid #ffffff;
+}
+
+/* Playback Bar - Track Info */
+.track-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.track-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.track-info span {
+    font-size: 14px;
+    color: #fff;
+    display: block;
+}
+
+.track-info span.track-title {
+    font-weight: bold;
+}
+
+.track-info span.track-artist {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+/* Playback Bar - Audio Player */
+audio {
+    width: 100%;
+}

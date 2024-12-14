@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Like Library</title>
+    <link rel="stylesheet" href="css/library-style.css">
+
+
+
+</head>
+<body>
+    <div class="spotify-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="icon-logo.svg" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="Shuffle.html"><i class='bx bxs-home'></i> Home</a></li>
+                    <li><a href="library.html"><i class='bx bx-library'></i> Library</a></li>
+                    <li><a href="music.html"><i class='bx bx-library'></i> Music  </a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h2>Your Library</h2>
+            <!-- Button to Open Modal -->
+            <a href="#create-playlist-modal" class="create-playlist">
+                <span>Create Playlist</span>
+            </a>
+
+            <!-- Playlists -->
+            <div class="playlist-grid">
+                <div class="playlist-card">
+                    <img src="images/sad.jpg" alt="Playlist Cover">
+                    <span>Sad</span>
+                </div>
+
+                <div class="playlist-card">
+                    <img src="images/rock.jpg" alt="Playlist Cover">
+                    <span>Rock</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal -->
+        <div id="create-playlist-modal" class="modal">
+            <div class="modal-content">
+                <label for="playlist-name">Name your playlist</label>
+                <input type="text" id="playlist-name" placeholder="Playlist Name">
+                <button>Add Playlist</button>
+                <a href="#" class="modal-close">Cancel</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
