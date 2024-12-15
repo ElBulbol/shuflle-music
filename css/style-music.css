@@ -124,6 +124,8 @@ body, html {
 .music-card span {
     font-size: 16px;
     color: #fff;
+    font-family: 'Rubik';
+    font-weight: bold;
 }
 
 .music-card button {
@@ -174,6 +176,7 @@ body, html {
 
 .track-info span.track-title {
     font-weight: bold;
+
 }
 
 .track-info span.track-artist {
@@ -181,7 +184,7 @@ body, html {
     color: #b3b3b3;
 }
 
-/* Playback Bar - Audio Player */
+/* music bar */
 audio {
     width: 100%;
 }

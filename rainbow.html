@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow in the sky is playing| shuffle</title>
+    <link rel="stylesheet" href="css/style-music.css">
+    <link rel="icon" type="image/x-icon" href="logo only.svg">
+</head>
+
+<body>
+    <div class="spotify-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <img src="icon-logo.svg" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="Shuffle.html"><i class='bx bxs-home'></i> Home</a></li>
+                    <li><a href="library.html"><i class='bx bx-library'></i> Library</a></li>
+                    <li><a href="music.html" class="active"><i class='bx bx-music'></i>Music</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h2>My Music</h2>
+            <div class="music-grid">
+                        <!-- songsiconsig -->
+                <div class="music-card">
+                    <img src="images/killing my love.jpg" alt="Music Cover">
+                    <span>Killing my Love</span>
+                 <a href="killing my love.html">   <button onclick="document.getElementById('audio-player').src='music/Killing my Love.mp3';">Play</button> </a>
+                </div>
+
+                <div class="music-card">
+                    <img src="images/Like a thunder photo.jpg" alt="Music Cover">
+                    <span>Like A Thunder</span>
+                    <a href="likeathunder.html">   <button onclick="document.getElementById('audio-player').src='music/Like A Thunder.mp3';">Play</button></a>
+                </div>
+
+                <div class="music-card">
+                    <img src="images/run! photo.jpg" alt="Music Cover">
+                    <span>RUN!</span>
+                    <a href="run.html"> <button onclick="document.getElementById('audio-player').src='music/RUN! .mp3';">Play</button></a>
+                </div>
+
+                <div class="music-card">
+                    <img src="images/MANIC MAN photo.jpg" alt="Music Cover">
+                    <span>MANIC MAN</span>
+                    <a href="manicman.html">   <button onclick="document.getElementById('audio-player').src='music/MANIC MAN.mp3';">Play</button></a>
+                </div>
+                <div class="music-card">
+                    <img src="images/Luv(sic.) pt3 (feat. Shing02) photo.jpg" alt="Music Cover">
+                    <span>Luv(sic.) pt3 <br>(feat. Shing02)</span>
+                    <a href="luv.html">  <button onclick="document.getElementById('audio-player').src='music/Luv(sic.) pt3 (feat. Shing02).mp3';">Play</button></a>
+                </div>
+                <div class="music-card">
+                    <img src="images/tol8tephoto.jpg" alt="Music Cover">
+                    <span>وبقيت وحيد</span>
+                    <a href="tol.html">   <button onclick="document.getElementById('audio-player').src='music/وبقيت وحيد.mp3';">Play</button></a>
+                </div>
+
+                <div class="music-card">
+                    <img src="images/the unknowing photo.jpg" alt="Music Cover">
+                    <span>THE UNKNOWING</span>
+                    <a href="theunknowing.html">  <button onclick="document.getElementById('audio-player').src='music/The Unknowing.mp3';">Play</button></a>
+                </div>
+
+                <div class="music-card">
+                    <img src="images/from the start photo.jpg" alt="Music Cover">
+                    <span>From the start</span>
+                    <a href="fromthestart.html">  <button onclick="document.getElementById('audio-player').src='music/from the start.mp3';">Play</button></a>
+                </div>
+
+                <div class="music-card">
+                    <img src="images/Rainbow In The Sky photo.jpg" alt="Music Cover">
+                    <span>Rainbow in the sky</span>
+                    <a href="rainbow.html">    <button onclick="document.getElementById('audio-player').src='music/Rainbow In The Sky - Radio Edit.mp3';">Play</button></a>
+                </div>
+
+                <div class="music-card">
+                    <img src="images/linkin park.jpg" alt="Music Cover">
+                    <span>In the End</span>
+                    <a href="in the end.html">    <button onclick="document.getElementById('audio-player').src='music/SO HIGH.mp3';">Play</button></a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Playback Bar -->
+        <footer class="playback-bar">
+            <!-- Track Info -->
+            <div class="track-info">
+                <img src="images/Rainbow In The Sky photo.jpg" alt="Track Cover">
+                <div>
+                    <span class="track-title">Rainbow In <br> sky</span>
+                    <span class="track-artist">Dj Paul Elstak</span>
+                </div>
+            </div>
+            <!-- music bar player real !!-->
+            <strong>Audio Player</strong>
+            <audio id="audio-player" autoplay controls src="music/Rainbow In The Sky - Radio Edit.mp3"></audio>
+        </footer>
+    </div>
+</body>
+
+</html>
